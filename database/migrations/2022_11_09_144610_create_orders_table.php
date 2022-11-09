@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->foreignId('shop_id')->constrained()->onUpdate('cascade');
             $table->integer('total_order_amount');
+            $table->dateTime('delivery_date_time');
             $table->timestamps();
             $table->dateTime('canceled_at')->nullable();
         });
