@@ -23,7 +23,8 @@ class OrderFactory extends Factory
     {
         return [
             'shop_id' => Shop::factory(),
-            'delivery_date_time' => Carbon::now()->addHour()->format('Y-m-d 00:00:00'),
+            'delivery_date_time' => Carbon::now()->addHour()->format('Y-m-d H:00:00'),
+            'total_order_amount' => 1500,
         ];
     }
 }

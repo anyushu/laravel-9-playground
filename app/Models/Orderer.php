@@ -17,6 +17,8 @@ class Orderer extends Model
         'email',
     ];
 
+    public $timestamps = false;
+
     /**
      * 注文
      *

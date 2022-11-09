@@ -15,6 +15,8 @@ class OrderedProduct extends Model
         'product_price',
     ];
 
+    public $timestamps = false;
+
     /**
      * 注文
      *

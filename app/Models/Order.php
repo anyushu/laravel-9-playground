@@ -23,4 +23,24 @@ class Order extends Model
     {
         return $this->belongsTo(Shop::class);
     }
+
+    /**
+     * 注文者情報
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasOne
+     */
+    public function orderer()
+    {
+        return $this->hasOne(Orderer::class);
+    }
+
+    /**
+     * 注文商品情報
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function orderedProducts()
+    {
+        return $this->hasMany(OrderedProduct::class);
+    }
 }
