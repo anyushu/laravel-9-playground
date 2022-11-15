@@ -23,11 +23,14 @@ class ProductFactory extends Factory
         return [
             'shop_id' => Shop::factory(),
             'name' => fake()->randomElement([
-                'ハンバーグ', 'チャーハン', 'ラーメン', 'ピザ', 'パスタ', 'プリン'
+                'ハンバーグ',
+                'チャーハン',
+                'ラーメン',
+                'ピザ',
+                'パスタ',
+                'プリン',
             ]),
-            'price' => fake()->randomElement([
-                550, 780, 980, 1540, 1890, 2230
-            ]),
+            'price' => fake()->randomElement([550, 780, 980, 1540, 1890, 2230]),
         ];
     }
 }

@@ -23,10 +23,20 @@ class OrderedProductFactory extends Factory
         return [
             'order_id' => Order::factory(),
             'product_name' => fake()->randomElement([
-                'ハンバーグ', 'チャーハン', 'ラーメン', 'ピザ', 'パスタ', 'プリン'
+                'ハンバーグ',
+                'チャーハン',
+                'ラーメン',
+                'ピザ',
+                'パスタ',
+                'プリン',
             ]),
             'product_price' => fake()->randomElement([
-                550, 780, 980, 1540, 1890, 2230
+                550,
+                780,
+                980,
+                1540,
+                1890,
+                2230,
             ]),
         ];
     }

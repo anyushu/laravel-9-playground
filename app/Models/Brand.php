@@ -9,10 +9,7 @@ class Brand extends Model
 {
     use HasFactory;
 
-    protected $fillable = [
-        'domain',
-        'name',
-    ];
+    protected $fillable = ['domain', 'name'];
 
     /**
      * 店舗

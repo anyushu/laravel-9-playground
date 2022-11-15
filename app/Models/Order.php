@@ -9,10 +9,7 @@ class Order extends Model
 {
     use HasFactory;
 
-    protected $fillable = [
-        'shop_id',
-        'total_order_amount',
-    ];
+    protected $fillable = ['shop_id', 'total_order_amount'];
 
     /**
      * 店舗

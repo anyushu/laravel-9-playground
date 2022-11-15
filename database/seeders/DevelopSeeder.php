@@ -21,17 +21,16 @@ class DevelopSeeder extends Seeder
     {
         Brand::factory()
             ->has(
-                Shop::factory()->count(3)->has(
-                    Product::factory()->count(3)
-                )->has(
-                    Order::factory()->count(5)
-                        ->has(
-                            Orderer::factory()
-                        )
-                        ->has(
-                            OrderedProduct::factory()->count(2)
-                        )
-                )
-            )->create(['domain' => 'develop']);
+                Shop::factory()
+                    ->count(3)
+                    ->has(Product::factory()->count(3))
+                    ->has(
+                        Order::factory()
+                            ->count(5)
+                            ->has(Orderer::factory())
+                            ->has(OrderedProduct::factory()->count(2))
+                    )
+            )
+            ->create(['domain' => 'develop']);
     }
 }

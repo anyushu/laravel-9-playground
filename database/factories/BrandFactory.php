@@ -20,7 +20,9 @@ class BrandFactory extends Factory
     public function definition()
     {
         return [
-            'domain' => fake()->unique()->word(),
+            'domain' => fake()
+                ->unique()
+                ->word(),
             'name' => fake()->company(),
         ];
     }

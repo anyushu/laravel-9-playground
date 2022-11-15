@@ -9,10 +9,7 @@ class Shop extends Model
 {
     use HasFactory;
 
-    protected $fillable = [
-        'brand_id',
-        'name',
-    ];
+    protected $fillable = ['brand_id', 'name'];
 
     /**
      * ブランド
